@@ -53,6 +53,13 @@ You evaluate:
 (bx seed, bx ecNew, bx ecToPublic, bx ecToAddress) run.
   "'18FXUKxphFdd166nqNwt35uXCxAoFZC79q'"
 ```
+For convenience you could also use `|` instead of `,` to create a chained command (but it is not very _smalltalkish_)
+```smalltalk
+(bx seed | bx ecNew | bx ecToPublic | bx ecToAddress) run.
+```
+
+
+
 ### Passing text as standard input
 
 To pass aString as the STDIN of the invoked command, you can do it by using `runWith: aString` instead of `run`.
