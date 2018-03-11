@@ -22,9 +22,9 @@ Please note that the `bx` executable must be included in `$PATH` and its binary 
 
 ## About this wrapper
 
-This wrapper is build with the objective of being able to run `bx` from the comfort of the Pharo image.
+This wrapper is built with the objective of being able to run `bx` from within the comfort of the Pharo image.
 
-It is built using [OSSubprocess](https://github.com/marianopeck/OSSubprocess/) extensively to invoke the external `bx` commands. 
+It uses [OSSubprocess](https://github.com/marianopeck/OSSubprocess/) extensively to invoke the external `bx` commands. 
 Since this is a work in progress, it's been tested in Linux only, so only `OSSUnixSubprocess` is implemented.
 
 ## BX Commands
