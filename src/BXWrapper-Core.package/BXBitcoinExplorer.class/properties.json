@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EstebanMaringolo 3/10/2018 21:50",
+	"super" : "Object",
+	"category" : "BXWrapper-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BXBitcoinExplorer",
+	"type" : "normal"
+}

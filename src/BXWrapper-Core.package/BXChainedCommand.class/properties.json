@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EstebanMaringolo 3/10/2018 21:34",
+	"super" : "BXCommand",
+	"category" : "BXWrapper-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"next"
+	],
+	"name" : "BXChainedCommand",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I run tests for the BXCommand class.

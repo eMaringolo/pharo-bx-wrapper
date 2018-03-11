@@ -1,0 +1,4 @@
+chaining
+| aBXCommand
+
+	^self , aBXCommand 
