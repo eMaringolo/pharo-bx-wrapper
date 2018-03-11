@@ -2,12 +2,23 @@
 Wrapper methods to execute [libbitcoin's bx command line utility](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
 as regular Pharo expressions.
 
-
 ## About Bitcoin Explorer (bx)
 
 BX is a general purpose Bitcoin command line utility that supports Linux, OSX and Windows.
 The application can be built an distributed as a single file binary with no run time
 dependencies apart from the operating system.
+
+## Installation
+
+```smalltalk
+Metacello new 
+  baseline: 'BXWrapper'; 
+  repository: 'github://eMaringolo/pharo-bx-wrapper/src'; 
+  load.
+```
+
+Please note that the `bx` executable must be included in `$PATH` and its binary is not provided by this package. You can download it at https://github.com/libbitcoin/libbitcoin-explorer/wiki/Download-BX.
+
 
 ## About this wrapper
 
