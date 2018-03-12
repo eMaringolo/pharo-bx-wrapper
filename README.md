@@ -27,9 +27,6 @@ This wrapper is built with the objective of being able to run `bx` from within t
 It uses [OSSubprocess](https://github.com/marianopeck/OSSubprocess/) extensively to invoke the external `bx` commands. 
 Since this is a work in progress, it's been tested in Linux only, so only `OSSUnixSubprocess` is implemented.
 
-## BX Commands
-
-BX commands are programmed in a way that most of its input can be passed by STDIN, and its STDOUT to another bx command.
 
 ## Pharo examples 
 
@@ -45,42 +42,22 @@ Inspect or print the output for the following examples.
 ### Executing a single command
 
 ```smalltalk
-bx seed run
+bx seed
  "'b0903233d630b2e5bb67a64f906819c914ea2612d63131ee'"
 ```
 
+
 ### Chaining commands
-To avoid excessive command line calls, you can chain different methods that will be run using a single shell call.
 
-So to run the equivalent of this command line:
-
-```
+To run the equivalent of:
+```shell
 $ bx seed | bx ec-new | bx ec-to-public | bx ec-to-address
 ```
 
 You evaluate:
-
 ```smalltalk
-(bx seed, bx ecNew, bx ecToPublic, bx ecToAddress) run.
-  "'18FXUKxphFdd166nqNwt35uXCxAoFZC79q'"
+bx := BXBitcoinExplorer new.
+(bx ecToAddress: (bx ecToPublic: (bx ecNew: bx seed))).
+"'18FXUKxphFdd166nqNwt35uXCxAoFZC79q'"
 ```
-For convenience you could also use `|` instead of `,` to create a chained command (but it is not very _smalltalkish_)
-```smalltalk
-(bx seed | bx ecNew | bx ecToPublic | bx ecToAddress) run.
-```
-
-
-
-### Passing text as standard input
-
-To pass aString as the STDIN of the invoked command, you can do it by using `runWith: aString` instead of `run`.
-
-```smalltalk
-Passing a EC seed generated in Pharo.
-(bx ecNew, bx ecToPublic, bx ecToAddress) runWith: BIP39Mnemonic generate seed
-```
-
-(The above example requires `BIP39Mnemonic` from https://github.com/eMaringolo/pharo-bip39mnemonic/)
-
-
 
