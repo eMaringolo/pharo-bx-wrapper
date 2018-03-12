@@ -1,0 +1,1 @@
+I run bx commands as a sequence of commands where the output of one command is the input of the next one.

@@ -1,4 +1,4 @@
 commands-wallet
 seed
 
-	^self newCommand: 'seed'
+	^self run: (self newCommand: 'seed')

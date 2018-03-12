@@ -1,0 +1,4 @@
+testing
+hasInput
+
+	^input notNil

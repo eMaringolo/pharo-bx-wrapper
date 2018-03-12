@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "EstebanMaringolo 3/11/2018 23:02",
-	"super" : "Object",
+	"super" : "Error",
 	"category" : "BXWrapper-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"command",
-		"input",
-		"arguments",
-		"needsInput"
-	],
-	"name" : "BXCommand",
+	"instvars" : [ ],
+	"name" : "BXCommandError",
 	"type" : "normal"
 }

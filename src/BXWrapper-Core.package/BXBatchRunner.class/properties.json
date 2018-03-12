@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EstebanMaringolo 3/11/2018 23:33",
+	"super" : "BXRunner",
+	"category" : "BXWrapper-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BXBatchRunner",
+	"type" : "normal"
+}

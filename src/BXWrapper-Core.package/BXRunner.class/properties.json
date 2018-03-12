@@ -1,16 +1,13 @@
 {
-	"commentStamp" : "EstebanMaringolo 3/11/2018 23:02",
+	"commentStamp" : "EstebanMaringolo 3/11/2018 23:33",
 	"super" : "Object",
 	"category" : "BXWrapper-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"command",
-		"input",
-		"arguments",
-		"needsInput"
+		"explorer"
 	],
-	"name" : "BXCommand",
+	"name" : "BXRunner",
 	"type" : "normal"
 }
